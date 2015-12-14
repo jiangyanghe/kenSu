@@ -1,0 +1,9 @@
+!.gitignore
+!.jshintrc
+/node_modules/*
+/bower_components/*
+/dist/*
+/.settings
+/.buildpath
+/.project
+/.idea

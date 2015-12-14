@@ -1,0 +1,19 @@
+{
+  "name": "acunetix敏捷管理",
+  "version": "0.0.1",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "bootstrap": "~3.3.5",
+    "nprogress": "~0.2.0"
+  },
+  "devDependencies": {
+
+  }
+}

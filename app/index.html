@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="author" content="stephen">
+    <meta name="description" content="acunetix敏捷管理">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAlCAIAAACoIKwtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphMzAzZGJmYi05NTQzLTQ4NjUtYjI5Mi0zMGVmMDc0MTI0ZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzY3REUxQjk1QjcwMTFFNTk5RDdDQkVFRDk4N0VGOEUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzY3REUxQjg1QjcwMTFFNTk5RDdDQkVFRDk4N0VGOEUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5Y2Y1ZDMxNS1mZjNlLTRlNDYtOTQ4Yi0xNzFkZjA1NzgzYWQiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo4NjlhYTA5Yy04YWI1LTExNzgtYmE4Ny1iN2QxZjNlNjBjZDAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7k8HyFAAAFB0lEQVR42rxXaU8bVxSdzTNjY2xjYxuz2hizBBucsG8mYWsBkVZqo6pRpbZRVdSfwA+p1KpK2qibqBSpn5qqCxCyNAhUUdI2JKEQQsNiY8DY2DN4Zl6vbUoI2MZQ0pFlj968N+fec+8575ny+XzYi78IbuQqfBAXeBFvF70LwuyvcEOFp76XNpcxJDFNb+I0e5IYnnn+l2+wkI8qPENJAa/oneZGPsaQyNRfwBXqk8FYe8oPfcJPfkuZHJFscEUG/Eib89zoZeCQabiAy9P/K8bqE37kU278a0wM4nJVBGb3meR7zA1/hKQwU/c6ka47NobknuNHPuMnohi0BiOo52AiMwIL3M8fopCfdb1NqPVHz0IQV2a4oSv85DXAiIzgJIah/TBwIc7D3/0CC/PsuXcJjQnD8VQxkCTM/8aPXt3+47sdjOjoTkPHmR9c4ccHuZtfSj53yhhIgr669RU/dQ0JW3F0E3cVLpPjChVGUljqOBSNs0qcTIv7OM6LCGUe0/wO23TxCC2HE6Q2h215C0jmJwbR9sYhMKS2hHFdYupew9m0IzuKycZ2fgBMhMYHseBSDP8ADESkt7Pt/fTpXlzGHNO7NEam432MVXA3L0ONd1uAQkhE0QoReruivZ9y9hwb41/OM9iGNwgcD45ekYIrSBQjMHTQzWIBuakCO/eeVNGFnYSt4WoD03RRKW3xY5+LnCdKWo7Tryr0t1zKdLpO0pyV2lBL/4aySB5YlAHw44kbPMHqzcUEcYgSRUlCEiIIInovkgQZvUcJc8LxUCgkBv1KnYESdeaAf+vB5EMZgWQkiB7hB1biGA4YwRCn1ags+TmCKD74a14QBJahE+oII4LbAk3TRp1GCaRJCFv3BUZHb6/7fDIqoR4lSAWhtuaaYqtZEMRHs/P37s8gFAk50RKOC9mKbWcbqiK1USkVllxjrbPs+vCdtY1kG3ZTTWVleTFDy4Cs6spT7tWN+49mk8zPyTLUOmz5WRGzpyBx+LQ11zIM/ePomHt17eACmYwCjJ725gx1dPOgyNIiC6QOiPemZyDPg0uKzHndbY32Ulus5OTAwEDkhyTyc0ww8nTJw/H83gUQRK3zVG+HCwqzd1yrURsytT7/lse7DnzufWTOyz7/cquj1LZL6TPrBNiG6kpgP00hf+Y9JOG0F3e3Ne/D2H1dT1sjBL530KjXQR6lVstzHhbLZoccisrO0kP4cwuLYUGAWGqc5ee7WiHqRAXQqFU6rXrZ7fVtRs5GWYbMvs4Wp70EiE0IEytDrskA7bu47LGXWns7mk3GZNsosKLL0Oh16qWVVYWc7Wytr69yUCS5f1rc4+DGpv/36RmQCHRLiqqf+vMhBFdiNQNYnGgSnTqhqv5AcNm9uh0O07QMCNxX55jOQU8gI+jygtxsiqISqYhKYhWA8dPNsbknixG1R/wBHZwUDofhu6yoQJWuTFLCZNuwpSCn3G2d/3tp2eONhokfzBi+QQm1px3ajGTnyGQw0HhVFWXQ6NeH7oA44rok9PQrL7WWWAtilppwEzrEztMUjdXOvk6XLl6whQW5r3aftZcWJcc4HCam0LozDpCtco9s4co1GXvbm8qLran0YUpHJOCttb4KOmr49gT0OoxkG/V9XS1gWSm2e6onMTDWTlc91PyHG3flcravy+UsLzl0JzwyTMwgwHtAfSRJltksh9YjJXme8J9C7H+5/hFgAALK3AbPG2TzAAAAAElFTkSuQmCC">
+    <title>服务器定义</title>
+    <link rel="stylesheet" type="text/css" href="/dist/css/common.min.css" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/main.css" />
+</head>
+<body>
+<div class="container">
+    <header>
+        <ul class="list-inline">
+            <li><a href="/index.html"><img src="/dist/img/AQlogo.png"></a></li>
+            <li class="pull-right"><button id="login_out" class="login-out">退出</button></li>
+            <li class="pull-right">admin</li>
+        </ul>
+    </header>
+    <div class="clearfix acunetix">
+        <div class="pull-left" id="sidemenu">
+            <div class="side-module clearfix mt_50">
+                <h3 class="parent-menu">
+                    <img src="/dist/img/quanxianLogo.png"> 权限管理 <span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                    <li><span class="circle"></span><a href="#">管理列表</a></li>
+                    <li><span class="circle"></span><a href="#">角色管理</a></li>
+                </ul>
+            </div>
+            <div class="side-module clearfix">
+                <h3 class="parent-menu">
+                    <img src="/dist/img/saomiaoLogo.png"> 扫描管理 <span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                    <li><span class="circle"></span><a href="#">扫描列表</a></li>
+                    <li><span class="circle"></span><a href="#">报告管理</a></li>
+                </ul>
+            </div>
+            <div class="side-module clearfix">
+                <h3 class="parent-menu">
+                    <img src="/dist/img/jiaoyiLogo.png"> 交易管理 <span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                    <li><span class="circle"></span><a href="#">交易列表</a></li>
+                </ul>
+            </div>
+            <div class="side-module clearfix">
+                <h3 class="parent-menu">
+                    <img src="/dist/img/cuxiaoLogo.png"> 促销管理 <span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                    <li><span class="circle"></span><a href="#">批发管理</a></li>
+                    <li><span class="circle"></span><a href="#">红包类型</a></li>
+                    <li><span class="circle"></span><a href="#">优惠活动</a></li>
+                </ul>
+            </div>
+            <div class="side-module clearfix">
+                <h3 class="parent-menu">
+                    <img src="/dist/img/aqclupLogo.png"> AQ Club<span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                    <li><span class="circle"></span><a href="#">类别设置</a></li>
+                    <li><span class="circle"></span><a href="#">文章列表</a></li>
+                    <li><span class="circle"></span><a href="#">发布文章</a></li>
+                </ul>
+            </div>
+            <div class="side-module clearfix">
+                <h3 class="parent-menu">
+                    <img src="/dist/img/huiyuanLogo.png"> 会员管理<span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                    <li><span class="circle"></span><a href="#">会员列表</a></li>
+                    <li><span class="circle"></span><a href="#">会员等级</a></li>
+                    <li><span class="circle"></span><a href="#">会员留言</a></li>
+                    <li><span class="circle"></span><a href="#">充值管理</a></li>
+                    <li><span class="circle"></span><a href="#">资产管理</a></li>
+                </ul>
+            </div>
+            <div class="side-module clearfix">
+                <h3 class="parent-menu">
+                    <img src="/dist/img/baogaoLogo.png"> 报表统计<span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                    <li><span class="circle"></span><a href="#">客户统计</a></li>
+                    <li><span class="circle"></span><a href="#">销售概况</a></li>
+                    <li><span class="circle"></span><a href="#">销售明细</a></li>
+                    <li><span class="circle"></span><a href="#">会员排行</a></li>
+                </ul>
+            </div>
+            <div class="side-module clearfix">
+                <h3 class="parent-menu">
+                    <img src="/dist/img/duanxinLogo.png"> 短信管理<span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                </ul>
+            </div>
+            <div class="side-module clearfix">
+                <h3 class="parent-menu">
+                    <img src="/dist/img/youjianLogo.png"> 邮件群发<span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                </ul>
+            </div>
+            <div class="side-module clearfix">
+                <h3 class="parent-menu">
+                    <img src="/dist/img/shezhiLogo.png"> 系统设置<span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                    <li><span class="circle"></span><a href="#">站点管理</a></li>
+                    <li><span class="circle"></span><a href="#">会员注册设置</a></li>
+                    <li><span class="circle"></span><a href="#">支付方式</a></li>
+                    <li><span class="circle"></span><a href="#">首页广告管理</a></li>
+                    <li><span class="circle"></span><a href="#">自定义导航</a></li>
+                    <li><span class="circle"></span><a href="#">网络日志</a></li>
+                </ul>
+            </div>
+            <div class="side-module clearfix">
+                <h3 class="parent-menu">
+                    Acunetix调度管理 <span class="glyphicon pull-right ionic-right glyphicon-menu-right"></span>
+                </h3>
+                <ul class="sub-menu">
+                    <li><span class="circle"></span><a class="statusActive" href="/templates/dispatch_management/server_definition.html">服务定义</a></li>
+                    <li><span class="circle"></span><a class="" href="/templates/dispatch_management/scan_target.html">扫描目标</a></li>
+                    <li><span class="circle"></span><a class="" href="/templates/dispatch_management/scan_status.html">扫描状态</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pull-left" id="content">
+            <div class="server-definition">
+                <h2>服务器定义</h2>
+                <ul class="list-inline service-form">
+                    <li><input type="text" placeholder="服务器:" maxlength="20" class="service-input" id="serverIP"></li>
+                    <li><button class="btn-mine" id="service_find">查询</button></li>
+                    <li class="pull-right"><button class="btn-mine pull-right" id="service_add">添加服务器</button></li>
+                </ul>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td></td>
+                            <td>服务器IP</td>
+                            <td>端口</td>
+                            <td>并发数</td>
+                            <td>操作</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="serverIP">192.168.111.111</td>
+                            <td class="serverPort">8888</td>
+                            <td class="MaxClients">10</td>
+                            <td><span title="编辑" class="glyphicon glyphicon-edit mr_10"></span><span title="删除" class="glyphicon ml_10 glyphicon-trash"></span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="serverIP">192.168.111.222</td>
+                            <td class="serverPort">3333</td>
+                            <td class="MaxClients">5</td>
+                            <td><span title="编辑" class="glyphicon glyphicon-edit mr_10"></span><span title="删除" class="glyphicon ml_10 glyphicon-trash"></span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>192.168.111.111</td>
+                            <td>8888</td>
+                            <td>10</td>
+                            <td><span title="编辑" class="glyphicon glyphicon-edit mr_10"></span><span title="删除" class="glyphicon ml_10 glyphicon-trash"></span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>192.168.111.111</td>
+                            <td>8888</td>
+                            <td>10</td>
+                            <td><span title="编辑" class="glyphicon glyphicon-edit mr_10"></span><span title="删除" class="glyphicon ml_10 glyphicon-trash"></span></td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="5">
+                                <ul class="list-inline">
+                                    <li><a href="#">首页</a></li>
+                                    <li><a href="#">上一页</a></li>
+                                    <li><a class="active" href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">下一页</a></li>
+                                    <li><a href="#">尾页</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="mydialog">
+                    <div class="service-pop">
+                        <div class="pop-header"><h3 id="pop_header"></h3></div>
+                        <div class="pop-content">
+                            <div class="option hidden">
+                                <dl class="dl-horizontal">
+                                    <dt>服务器IP:</dt>
+                                    <dd><input type="text" maxlength="20" id="server_ip"></dd>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <dt>端口:</dt>
+                                    <dd><input type="text" maxlength="6" id="server_port"></dd>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <dt>并发数:</dt>
+                                    <dd><input type="number" maxlength="5" id="MaxClients"></dd>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <dt>用户名:</dt>
+                                    <dd><input type="text" maxlength="50" id="username"></dd>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <dt>密码:</dt>
+                                    <dd><input type="password" maxlength="50" id="password"></dd>
+                                </dl>
+                                <div>
+                                    <button class="btn-mine cancle" style="margin-left: 120px">取消</button>
+                                    <button class="btn-mine" style="margin-left: 108px" id="confirm">确定</button>
+                                </div>
+                            </div>
+                            <div class="delete hidden text-center">
+                                <p class="mt_20">是否删除该服务器</p>
+                                <p class="mt_10" id="ip"></p>
+                                <div>
+                                    <button class="btn-mine cancle" style="margin-left: 62px">取消</button>
+                                    <button class="btn-mine" style="margin-left: 108px" id="delete_serve">确定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <ul class="list-inline">
+            <li>Copyright C 2015 AQ Dog安犬科技 版权所有 </li>
+            <li>法律声明 |</li>
+            <li> 合作协议</li>
+            <li>沪ICP备 8888888号-1</li>
+        </ul>
+    </footer>
+
+</div>
+
+</body>
+<script type="text/javascript" src="/dist/js/sdk_framework.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/dist/js/common_stephen.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/dist/js/sidemenu.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/dist/js/dispatch_management/server_definition.min.js" charset="utf-8"></script>
+</html>

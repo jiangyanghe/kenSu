@@ -1,0 +1,83 @@
+@import "./_variable";
+html{
+  font-size: 10px; /* 设置html为10px */
+}
+body{
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+.acunetix{
+  background-color: #f1f1f1;
+}
+header{
+  background-color: $header_color;
+  height: 100px;
+  line-height: 100px;
+  color: #cccccc;
+  font-size: 2.2rem;
+  padding: 0 20px;
+  .login-out{
+    padding: 0 10px;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 24px;
+    background-color: #cccccc;
+    color: $header_color;
+    font-size: 1.6rem;
+    border: 0;
+  }
+}
+#sidemenu{
+  min-width:70px;
+  min-height: 700px;
+  width: 22%;
+  background-color: #222d32;
+  .side-module{
+    h3{
+      color: #FFFFFF;
+      font-size: 20px;
+      cursor: pointer;
+      padding-left: 22px;
+      padding-right: 10px;
+      img{
+        float: left;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+    }
+    .sub-menu{
+      line-height: 40px;
+      background-color: #2c3b41;
+      a{
+        color: #cccccc;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .circle {
+        display: inline-block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #52616e;
+        margin-right: 10px;
+        /* 宽度和高度需要相等 */
+      }
+      .statusActive{
+        color: $active-color;
+      }
+    }
+  }
+}
+#content{
+  padding: 0 15px;
+  width: 78%;
+}
+#footer{
+  text-align: center;
+  line-height: 200px;
+  background-color: $header_color;
+  font-size: 2.4rem;
+  color: #cccccc;
+}

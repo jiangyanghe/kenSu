@@ -1,0 +1,163 @@
+@import "./_variable";
+.pointer{cursor: pointer}
+.font-12{font-size: 12px}
+.font-14{font-size: 14px}
+.font-16{font-size: 16px}
+.font-18{font-size: 18px}
+.font-20{font-size: 20px}
+.font-22{font-size: 22px}
+.font-24{font-size: 24px}
+.font-26{font-size: 26px}
+.font-28{font-size: 28px}
+.font-30{font-size: 30px}
+.font-36{font-size: 36px}
+.mt_5{margin-top: 5px}
+.mt_10{margin-top: 10px}
+.mt_15{margin-top: 15px}
+.mt_20{margin-top: 20px}
+.mt_25{margin-top: 25px}
+.mt_30{margin-top: 30px}
+.mt_35{margin-top: 35px}
+.mt_40{margin-top: 40px}
+.mt_50{margin-top: 50px}
+.mb_5{margin-bottom: 5px}
+.mb_10{margin-bottom: 10px}
+.mb_15{margin-bottom: 15px}
+.mb_20{margin-bottom: 20px}
+.mb_25{margin-bottom: 25px}
+.mb_30{margin-bottom: 30px}
+.mb_35{margin-bottom: 35px}
+.mb_40{margin-bottom: 40px}
+.mb_50{margin-bottom: 50px}
+.mt-40{margin-top: 40px}
+.mt-20{margin-top: 20px}
+.mt-18{margin-top: 18px}
+.margin_center{margin: auto;}
+
+.ml-0{margin-left: 0px}
+.mr-0{margin-right: 0px}
+.mr_5{margin-right: 5px}
+.mr_10{margin-right: 10px}
+.mr_15{margin-right: 15px}
+.mr_20{margin-right: 20px}
+.mr_25{margin-right: 25px}
+.mr_30{margin-right: 30px}
+.mr_35{margin-right: 35px}
+.ml_5{margin-left: 5px}
+.ml_10{margin-left: 10px}
+.ml_15{margin-left: 15px}
+.ml_20{margin-left: 20px}
+.ml_25{margin-left: 25px}
+.ml_30{margin-left: 30px}
+.ml_35{margin-left: 35px}
+.pl_0{padding-left: 0}
+.pl_5{padding-left: 5px}
+.pl_10{padding-left: 10px}
+.pl_15{padding-left: 15px}
+.pl_20{padding-left: 20px}
+.pl_25{padding-left: 25px}
+.pl_30{padding-left: 30px}
+.pl_35{padding-left: 35px}
+.pr_0{padding-right: 0}
+.pr_5{padding-right: 5px}
+.pr_10{padding-right: 10px}
+.pr_15{padding-right: 15px}
+.pr_20{padding-right: 20px}
+.pr_25{padding-right: 25px}
+.pr_30{padding-right: 30px}
+.pr_35{padding-right: 35px}
+ul li{list-style: none}
+
+.clear{clear:both;overflow:hidden;}
+.con1{width:10%;}
+.con2{width:20%;}
+.con3{width:33.33333333333333%;}
+.con4{width:40%;}
+.con5{width:50%;}
+.con6{width:60%;}
+.con7{width:70%;}
+.con8{width:78%;}
+.con9{width:90%;}
+.con10{width:100%;}
+.con11{width:25%;}
+
+.confirmLeave{
+  border: 5px solid red;
+  display: inline-block;
+  height: 20px;
+  width: 5px;
+  margin-right: 5px;
+}
+.patationLeave{
+  border: 5px solid #ffe900;
+  display: inline-block;
+  height: 20px;
+  width: 5px;
+  margin-right: 5px;
+}
+.btn-mine{
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid $active-color;
+  color: $active-color;
+  border-radius: 5px;
+}
+.btn-mine:hover{
+  background-color:$active-color;
+  color: #ffffff;
+}
+.noClassBtn{border: none;background-color: #ffffff}
+
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+/**弹出框样式**/
+.mydialog{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  display: none;
+}
+
+/**分页**/
+.page{
+  width: 100%;
+  margin-top: 1em;
+  text-align: center;
+  a{color: #434e5b;font-size: 2rem}
+  .page-active{color: $active-color;text-decoration:underline}
+}
+
+.onError{border:2px solid red}
+.glyphicon{cursor: pointer}
+.glyphicon:hover{color: $active-color}
+.pageActive{color: $active-color}
+.ghost-btn{
+  background-color: transparent;
+  border: 1px solid $active-color;
+  color: $active-color;
+}
+.ghost-btn:hover{
+  background-color: $active-color;
+  color: #FFFFFF;
+}
+.vertical-align{vertical-align: middle;}
+.relative{position: relative}
+.error{color: red}
+.errorDialog{
+  background-color: rgba(0,0,0,.8);
+  color: #FFFFFF;
+}
+.text-indent{
+  text-indent:2em;
+}
+.bold{font-weight: bold}
+/*input::-webkit-input-placeholder { font-size: 1.2rem !important;padding-top: 5px !important;   }// WebKit browsers /
+input:-moz-placeholder { font-size: 1.2rem !important;padding-top: 5px !important; }// Mozilla Firefox 4 to 18
+input::-moz-placeholder { font-size: 1.2rem !important;padding-top: 5px !important; } // Mozilla Firefox 19+  　　
+input:-ms-input-placeholder { font-size: 1.2rem !important;padding-top: 5px !important; } // Internet Explorer 10+*/
