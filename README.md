@@ -1,4 +1,6 @@
-# stephen_one
+# kenSu
+
+因为是第一个项目,一直想不到好的名字,就用我授业恩师的名字吧,挺感谢我的老大的,永远的老大!
 
 gulp sass browserSync bootstrap artdialog
 我的第一个模板，适合一些前端初学者应用jquery + bootstrap + gulp 去做一些自己喜欢的页面，并且及时在页面显示出来；
